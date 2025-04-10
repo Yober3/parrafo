@@ -1,46 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>proyecto de clase</title>
 </head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <style>
-        h3{
-            color: aqua;
-            font-size: 40px;
-        }
-        h1{
-            color: brown;
-            font-size: 40px;
-        }
-        h2{
-            color: black;
-            font-size: 40px;
-        }
-        h4{
-            color: brown;
+<body>
 
-            font-size: 40px;
-        }
-        h5{
-            color: blueviolet;
-            font-size: 40px;
-        }
-        </style>
-        <head>
-            <body>
-                <h1>Estoy en clase virtual certus</h1>
+    <video width="50%"  height="350px" controls autoplay>
+        <source src="rugido.mp4" type="video/mp4">
+    </video>
+    <audio controls loop>
+        <source src="audio.mp3" type="audio/mp3">
 
-                <h2>Hoy no fui a clase presencia</h2>
+    </audio>
+     
+    <form action="index2.html" method="get">
 
-                <h3>Estoy aprendiendo</h3>
+        <h1 style="color: red;">Mi primer formulario</h1>
+        <input type="text" name="codigo" id="codigo"> <br><br>
+        <input type="text" name="nombre" id="nombre" value="televisor"><br><br>
+        <input type="text" name="precio" id="precio" placeholder="ingresa el precio"><br><br>
+        
+        <h1>Mis datos personales</h1>
+        <label for="codigo">codigo de estudiante</label>
+        <input type="text" name="codigo" id="codigo" placeholder="ingresa el codigo"> <br><br>
+        <label for="nombre">nombre del estudiante</label>
+        <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre"> <br><br>
+        <label for="edad">Edad del estudiante</label>
+        <input type="text" name="edad" id="edad" placeholder="ingrese su Edad">
 
-                <h4>Yo estudio en certus</h4>
+        <h1> MIS Datos</h1>
+        <label for="dni">DNI</label>
+        <input type="radio" id="dni" name="tipo_documento"> <br>
 
-                <h5>Mañana presentare las actividades</h5>
+        <label for="pas">ingresa tu clave</label>
+        <input type="password" name="pass" placeholder="ingresa tu clave"><br><br>
 
-            </body>
-        </head></style>
+        <input type="submit" value="Enviar">
+
+        
+
+
+        </form>
+
+</body>
+</html>
