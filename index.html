@@ -6,20 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Pagina de biembenida</h1>
-    <p id="mensaje" style="color: brown;">Este es un parrafo</p>
+    <div id="mensaje"></div>
+    <div id="resultado"></div>
     <script>
-        document.getElementById('mensaje').innerHTML="Certus";
+        var mensaje = "Biemvenido a Certus";
 
-         document.write("<h2 style='color: blue;'>Bienbenido al segundo parrafo</");
+        document.getElementById('mensaje').innerHTML=mensaje;
 
+        var valor1=10;
 
-        window.alert('Bienvenido a certus');
+        var valor2=30;
+        var suma=valor1+valor2;
 
-
-        console.log('mensaje de la consola del navegador');
-
-
+        document.getElementById('resultado').innerHTML=suma;
     </script>
 </body>
 </html>
