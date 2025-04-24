@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="mensaje"></div>
+
     <div id="resultado"></div>
     <script>
-        var mensaje = "Biemvenido a Certus";
+        var valores=[10,30,40,20];
+        var resultado=valores[0]+valores[1]+valores[2]+valores[3];
 
-        document.getElementById('mensaje').innerHTML=mensaje;
-
-        var valor1=10;
-
-        var valor2=30;
-        var suma=valor1+valor2;
-
-        document.getElementById('resultado').innerHTML=suma;
+        document.getElementById('resultado').innerHTML="Resultado: "+resultado;
     </script>
 </body>
 </html>
