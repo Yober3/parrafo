@@ -6,51 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="resultado"></div>
-    
+    <h1>X=10</h1>
+    <h1>Y=15</h1>
+    <div id="Nombre"></div>
+     <div id="Resultado de la suma"></div>
+     <div id="Resultado de la resta"></div>
+    <div id="Resultsdo de la multiplicacion"></div>
+     <div id="Resultado de la division"></div>
     <script>
-    function sumar()
-    {
-       valornonbre = parseInt(prompt("ingrese su nonbre: "))
-        valor1= parseInt(prompt("vamos a sumar 3 numeros. Ingrese el numero uno: "));
-        valor2 = parseInt(prompt("ingrese el numero dos: "));
-        valor3 = parseInt(prompt("Ingrese el numero tres: "));
-
-        var resultado=valor1+valor2+valor3;
-        
-           
-        document.getElementById("resultado").innerHTML="La funcion obtiene la siguiente suma "+resultado;
-    }
-    sumar();
-
-    
-    
-
-     function multiplicar()
-     {
-        valor1= parseInt(prompt("vamos a multiplicar 3 numeros. Ingrese el numero uno: "));
-        valor2 = parseInt(prompt("ingrese el numero dos: "));
-        valor3 = parseInt(prompt("Ingrese el numero tres: "));
-
-        var resultado=valor1*valor2*valor3;
-
-        document.getElementById("resultado").innerHTML="La funcion obtiene la siguiente multiplicacion "*resultado;
-
-    
-    
-    }
-
+        var nombre="Yober";
+        document.getElementById('Nombre').innerHTML="Mi nombre es: "+nombre;
+        var valorX=10;
+        var valorY=15;
+        var suma= valorX + valorY;
+        document.getElementById('Resultado de la suma').innerHTML="Resultado de la suma es: "+suma;
+        var resta= valorX - valorY;
+        document.getElementById('Resultado de la resta').innerHTML="Resultado de la resta es: "+resta;
+        var multiplica= valorX * valorY;
+        document.getElementById('Resultado de la multiplicacion').innerHTML="Resultado de la multiplicacion es: "+multiplicacion;
+        var dividir= valorX / valorY;
+        document.getElementById('Resultado de la division').innerHTML="Resultado de la division es: "+division;
        
         
-        
+       
 
-
+    </script>
+    <h1>Resultado de la multiplicacion es:150</h1>
+    <h1>Resultado de la division es:0.666666667</h1>
     
-   
-    multiplicar();
-   
-</script>
-
 </body>
 </html>
-       
