@@ -7,23 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-  <div id="resultado1"></div>
-  <div id="resultado2"></div>
-  <div id="resultado3"></div>
-  <script>
-    var valores=[1,2,3,4,5,6,7,8,9,10];
-    
-    var resultado=valores[0]+valores[2]+valores[4]+valores[6]+valores[8];
-    document.getElementById('resultado1').innerHTML="Resultado: "+resultado;
-    
-    var resultado=valores[1]+valores[3]+valores[5]+valores[7]+valores[9];
-    document.getElementById('resultado2').innerHTML="Resultado: "+resultado;
+     <div id="nombre"></div>
+    <div id="resultado1"></div>
+    <div id="resultado2"></div>
+    <div id="resultado3"></div>
+    <script>
+        function sumar()
+        {
+            let nombre= prompt("Ingrese su nombre: ");
+            document.getElementById("nombre").innerHTML = "¡Hola, " + nombre + "!";
+          
+            
 
-    var resultado=valores[4]+valores[9];
-    document.getElementById('resultado3').innerHTML="Resultado: "+resultado;
+            
+            
 
 
+            valorx = parseInt(prompt("Vamos a sumar 3 números. Ingrese el número uno: "));
+            valory = parseInt(prompt("Ingrese numero dos: "));
+            valorz = parseInt(prompt("Ingrese numero tres: "))
 
-  </script>
+            var resultado=valorx+valory+valorz;
+            document.getElementById("resultado1").innerHTML="La función obtiene la siguiente suma: "+resultado;
+
+            var resultado=valorx-valory-valorz;
+            document.getElementById('resultado2').innerHTML="La funcion obtiene la siguiente resta: "+resultado;
+
+            var resultado=valorx*valory*valorz;
+            document.getElementById('resultado3').innerHTML="La funcion obtiene la siguiente resta: "+resultado;
+
+        }
+
+        sumar();
+        
+    </script>
 </body>
 </html>
