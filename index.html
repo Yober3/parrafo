@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,39 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-     <div id="nombre"></div>
-    <div id="resultado1"></div>
-    <div id="resultado2"></div>
-    <div id="resultado3"></div>
     <script>
-        function sumar()
-        {
-            let nombre= prompt("Ingrese su nombre: ");
-            document.getElementById("nombre").innerHTML = "¡Hola, " + nombre + "!";
-          
-            
+        var dato=20;
 
-            
-            
-
-
-            valorx = parseInt(prompt("Vamos a sumar 3 números. Ingrese el número uno: "));
-            valory = parseInt(prompt("Ingrese numero dos: "));
-            valorz = parseInt(prompt("Ingrese numero tres: "))
-
-            var resultado=valorx+valory+valorz;
-            document.getElementById("resultado1").innerHTML="La función obtiene la siguiente suma: "+resultado;
-
-            var resultado=valorx-valory-valorz;
-            document.getElementById('resultado2').innerHTML="La funcion obtiene la siguiente resta: "+resultado;
-
-            var resultado=valorx*valory*valorz;
-            document.getElementById('resultado3').innerHTML="La funcion obtiene la siguiente multiplicacion: "+resultado;
-
+        if(dato>10){
+            document.write("La condicion es verdadera");
+        } else{
+            document.write("La condicion es falsa");
         }
 
-        sumar();
-        
     </script>
+    
 </body>
 </html>
