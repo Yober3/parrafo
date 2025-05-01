@@ -7,21 +7,20 @@
 </head>
 <body>
     <script>
-        var dato1=prompt("¿Cual es su nombre?");
-        if(dato1=nombre)
-        document.write("Tu nombre es: ");
+        var dato=20;
 
-
-        var dato2=prompt("¿Que pelicula le gusta?");
-
-        if(dato2=Sherk)
+        switch(dato)
         {
-            document.write(" te gusta https://elcomercio.pe/resizer/v2/OVSRQ4YQ2RF3PESEOCW6NSADHU.jpg?auth=97dc77af2438d5dcb920968d1a582b003c9afcab37488fe4ff5200129585960a&width=1200&height=1200&quality=75&smart=true");
-        } 
-        else
-        {
-            document.write("Tu pelicula faborita no es Sherk");
+            case 10:
+                document.write("El valor es 10");
+                break;
+            case 20:
+                document.write("El valor es 20");
+                break;
+        default:
+            document.write("El valor de la variable no coincide con ningun caso");
         }
+        
 
     </script>
     
